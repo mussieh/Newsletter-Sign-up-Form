@@ -1,0 +1,83 @@
+/**************************/
+/* MAIN SECTION */
+/**************************/
+.main-section {
+    display: flex;
+    background-color: var(--white);
+    border-radius: 3rem;
+    min-width: 100%;
+}
+
+.form-container {
+    padding: 6rem;
+}
+
+.form-header {
+    color: var(--dark-slate-grey);
+    font-size: 5rem;
+}
+
+.form-description {
+    margin: 2rem 0;
+}
+
+.form-detail-list {
+    list-style-type: none;
+    margin-bottom: 4rem;
+}
+
+.form-detail-list li {
+    margin-bottom: 1rem;
+}
+
+.form-detail-list span {
+    vertical-align: sub;
+}
+
+.email-address-label-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email-address-span,
+.email-address-error {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+#email-address {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.7rem;
+    border: 1px solid var(--grey);
+    margin-bottom: 2rem;
+    outline: none;
+}
+
+.email-address-error {
+    color: red;
+}
+
+.error {
+    color: red;
+    background-color: rgb(251, 233, 232);
+}
+
+.error::placeholder {
+    color: red;
+}
+
+.list-icon {
+    margin-right: 1.8rem;
+}
+
+.img-illustration {
+    width: 40rem;
+    height: 59.3rem;
+}
+
+.picture-illustration {
+    padding: 2rem;
+    order: 1;
+}

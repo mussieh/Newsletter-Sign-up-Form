@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/general.css" />
+        <link rel="stylesheet" href="css/queries.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script defer src="js/script.js"></script>
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+
+        <title>
+            Frontend Mentor | Newsletter sign-up form with success message
+        </title>
+    </head>
+    <body>
+        <main>
+            <section class="main-section">
+                <picture class="picture-illustration">
+                    <source
+                        media="(min-width:1000px)"
+                        srcset="
+                            ./assets/images/illustration-sign-up-desktop.svg
+                        "
+                    />
+                    <source
+                        media="(max-width:700px)"
+                        srcset="./assets/images/illustration-sign-up-mobile.svg"
+                    />
+                    <img
+                        class="img-illustration"
+                        src="assets/images/illustration-sign-up-desktop.svg"
+                        alt="Illustration Image"
+                    />
+                </picture>
+                <div class="form-container">
+                    <h1 class="form-header">Stay updated!</h1>
+                    <p class="form-description">
+                        Join 60,000+ product managers receiving monthly updates
+                        on:
+                    </p>
+                    <ul class="form-detail-list">
+                        <li class="form-list-item">
+                            <span class="list-icon"
+                                ><img
+                                    src="assets/images/icon-list.svg"
+                                    alt="List Icon"
+                            /></span>
+                            Product discovery and building what matters
+                        </li>
+                        <li class="form-list-item">
+                            <span class="list-icon"
+                                ><img
+                                    src="assets/images/icon-list.svg"
+                                    alt="List Icon"
+                            /></span>
+                            Measuring to ensure updates are a success
+                        </li>
+                        <li class="form-list-item">
+                            <span class="list-icon"
+                                ><img
+                                    src="assets/images/icon-list.svg"
+                                    alt="List Icon"
+                            /></span>
+                            And much more!
+                        </li>
+                    </ul>
+                    <div class="email-address-label-container">
+                        <span class="email-address-span">Email address</span>
+                        <span
+                            class="email-address-error hidden"
+                            aria-live="polite"
+                            >Valid email required</span
+                        >
+                    </div>
+                    <form id="form" novalidate>
+                        <div>
+                            <input
+                                id="email-address"
+                                name="email-address"
+                                placeholder="email@company.com"
+                            />
+                        </div>
+                        <button type="submit" class="btn-subscribe">
+                            Subscribe to monthly newsletter
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
