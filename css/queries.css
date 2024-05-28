@@ -13,6 +13,10 @@
 /* BELOW 700px  */
 /**************************/
 @media (max-width: 43.75em) {
+    body {
+        display: block;
+    }
+
     .form-container {
         padding: 4rem !important;
         order: 1;
